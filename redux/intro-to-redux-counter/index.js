@@ -11,7 +11,7 @@
 			case 'INCREMENT':
 				return Object.assign(newState, {number: state.number+1})
 			case 'DECREMENT':
-				return state.assign(newState, {number: state.number-1})
+				return Object.assign(newState, {number: state.number-1})
 			default:
 				return state
 		}
